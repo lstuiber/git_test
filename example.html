@@ -5,26 +5,29 @@
 <head>
 </head>
 <body>
+  <p>Hey</p>
   <script>
 function computerPlay(){
   var name = "ready";
   var pick = Math.floor(Math.random()*3)+1;
   if (pick === 1){
-    name = "rock";
+    return 'rock';
   } else if (pick === 2){
-    name = "paper";
+
+    return 'paper';
   }
   else if (pick === 3){
-    name = "scissors";
+
+    return 'scissors';
   }
   else {
     alert("Not Working");
   }
   }
-  return name;
-}
+ function game(playerSelection, computerSelection){
+   
+ }
 var ready = computerPlay();
-alert();
 
   </script>
 </body>

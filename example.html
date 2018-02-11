@@ -7,10 +7,21 @@
 <body>
   <script>
 function computerPlay(){
+  var name = "ready";
   var pick = Math.floor(Math.random()*3)+1;
-  return pick;
+  if (pick === 1){
+    name = "rock";
+  } else if (pick === 2){
+    name = "paper";
+  }
+  else {
+    name = "scissors";
+  }
+  }
+  return name;
 }
-var play = computerPlay();
+var ready = computerPlay();
+alert(ready);
 
   </script>
 </body>
